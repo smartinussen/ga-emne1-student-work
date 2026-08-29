@@ -1,6 +1,6 @@
 # Pris med rabatt
 unit_price = float(input("Skriv inn enhetspris: "))
-discount_factor = int(input("Skriv inn rabatt prosent: "))
+discount_factor = float(input("Skriv inn rabatt prosent: "))
 discount = (unit_price * discount_factor) / 100
 new_price = unit_price - discount
 

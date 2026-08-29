@@ -2,11 +2,11 @@ first_name = "Steinar"
 favorite_language = input("What is your favorite language:")
 
 if favorite_language.lower() == "italian":
-    greeting = "Buiongiorno"
+    greeting = "Buongiorno"
 elif favorite_language.lower() == "english":
     greeting = "Welcome"
 elif favorite_language.lower() == "spanish":
-    greeting = "Buoenos dias"
+    greeting = "Buenos dias"
 elif favorite_language.lower() == "german":
     greeting = "Guten tag"
 else:

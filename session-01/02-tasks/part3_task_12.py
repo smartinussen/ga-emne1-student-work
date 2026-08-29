@@ -2,4 +2,4 @@
 timer = float(input("Antall arbeided timer: "))
 pris = float(input("Oppgi timepris: "))
 resultat = timer * pris
-print(f"Sum ukelønn {resultat} kr")
+print(f"Sum ukelønn {resultat:.2f} kr")
