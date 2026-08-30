@@ -11,7 +11,7 @@ if user_input == "1":
     celsius = float(input("Please enter degrees in C: "))
     print(f"{celsius} degrees Celsius is {celsius * 9 / 5 + 32:.2f} degrees Fahrenheit")
 
-if user_input == "2":
+elif user_input == "2":
     fahrenheit = float(input("Please enter degrees in F: "))
     print(
         f"{fahrenheit} degrees Fahrenheit is {(fahrenheit - 32) * 5 / 9:.2f} degrees Celsius"
