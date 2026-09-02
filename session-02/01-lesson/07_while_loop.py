@@ -1,5 +1,3 @@
-from dis import code_info
-
 countdown = 5
 
 while countdown > 0:
