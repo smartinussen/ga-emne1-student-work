@@ -2,4 +2,6 @@
 name = "ga-modul1"
 version = "0.1.0"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "nicegui>=3.16.0",
+]
