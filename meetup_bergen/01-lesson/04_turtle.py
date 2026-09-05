@@ -1,4 +1,5 @@
 import turtle
+
 t = turtle.Turtle()
 turtle.bgcolor("black")
 t.speed(0)

@@ -21,6 +21,6 @@ for star in range(10):
 pattern_char = "*"
 
 for i in range(1,11):  # Kontrollerer linjer
-    for length in range(11 - i): #
+    for length in range(11 - i):
         print(pattern_char, end="")
     print()  # Tvinger ny linje
