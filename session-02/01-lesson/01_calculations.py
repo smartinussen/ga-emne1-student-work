@@ -7,4 +7,3 @@ total_price = subtotal + service_fee
 price_pr_person = total_price / number_of_tickets
 
 print(f"Total pris: {total_price:.2f} kr, som er {price_pr_person:.2f} kr pr. person")
-

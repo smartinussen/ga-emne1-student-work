@@ -9,9 +9,8 @@ minimum_age = 18
 # score = 10
 # print(score == 10)
 
-#and, not, or
+# and, not, or
 has_ticket = True
 
 can_enter = age >= minimum_age and has_ticket
 print(can_enter)
-

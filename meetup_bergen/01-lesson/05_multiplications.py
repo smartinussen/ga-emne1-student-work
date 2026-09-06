@@ -8,7 +8,7 @@ while True:
     elif not factor_1.isdigit():
         print("Skriv inn et gyldig tall. Prøv igjen")
         continue
-        
+
     factor_2: str = input("Tast inn faktor 2: ")
     if factor_2 == "0":
         break

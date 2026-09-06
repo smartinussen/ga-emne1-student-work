@@ -1,5 +1,5 @@
 # Tips og totalpris
-print('''
+print("""
                                                                                    
 888888888888  88                          88      a8P               88  88         
      88       ""                          88    ,88'                88  88         
@@ -11,7 +11,7 @@ print('''
      88       88  88`YbbdP"'   `"YbbdP"'  88       Y8b  `"8bbdP"Y8  88  88   `Y8a  
                   88                                                               
                   88                                                                                                                                                                                                                                                                   
-''')
+""")
 innpris = float(input("Tast inn regningens sum: "))
 tips_15 = round((innpris * 1.15) - innpris, 2)
 

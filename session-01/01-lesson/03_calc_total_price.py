@@ -5,5 +5,5 @@ unit_price = float(input("Product price: "))
 quantity = int(input("Quantity: "))
 
 
-total = (unit_price * quantity)
+total = unit_price * quantity
 print(f"The total price is {total:.2f} kr")

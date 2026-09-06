@@ -6,5 +6,6 @@ aksjon = input("Hva vil du gjøre med gjenstanden (ett ord)?: ")
 
 
 print(
-    f"Tingen du har lyst å {aksjon} er en/et {gjenstand} som er {beskrivelse} og {farge}"
+    f"Tingen du har lyst å {aksjon} er en/et {gjenstand} "
+    f"som er {beskrivelse} og {farge}"
 )
