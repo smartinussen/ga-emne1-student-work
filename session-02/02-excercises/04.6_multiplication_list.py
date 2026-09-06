@@ -7,6 +7,6 @@ while True:
     if not factor.isdigit():
         print("Feil input. Du må taste inn et tall")
     else:
-        for i in range(1,11):
-            print(f"{factor} x {i} = {int(factor) * i}")  #Caster i f-string for å redusere linjer
+        for i in range(1, 11):
+            print(f"{factor} x {i} = {int(factor) * i}")
         break
