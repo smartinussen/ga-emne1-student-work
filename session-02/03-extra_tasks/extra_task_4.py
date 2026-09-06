@@ -3,7 +3,7 @@ print("This program checks if input is a prime number")
 
 while True:
     is_prime: bool = True
-    user_input: str = (input("Enter a positive integer (q to quit): "))
+    user_input: str = input("Enter a positive integer (q to quit): ")
     if user_input.lower() == "q":
         print("Program has ended")
         break
@@ -16,7 +16,7 @@ while True:
     if intput <= 1:
         is_prime = False
     else:
-        for i in range(2, int(intput ** 0.5) + 1):
+        for i in range(2, int(intput**0.5) + 1):
             if (intput % i) == 0:
                 is_prime = False
                 break

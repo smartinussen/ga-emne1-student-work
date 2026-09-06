@@ -1,9 +1,9 @@
-#temperature = 10
+# temperature = 10
 #
-#if temperature < 5:
+# if temperature < 5:
 #    print("Wear warm clothing")
 #
-#print("Ready to go again")
+# print("Ready to go again")
 
 
 # Test 2

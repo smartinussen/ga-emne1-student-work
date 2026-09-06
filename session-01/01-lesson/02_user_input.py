@@ -7,6 +7,3 @@ print(f"Your selected username is: {username}")
 print(f"You are enrolled in {course}")
 
 print(f"We will contact you on {user_mail} for any important messages")
-
-
-

@@ -9,13 +9,9 @@ while True:
 
 if user_input == "1":
     celsius = float(input("Please enter degrees in C: "))
-    print(
-        f"{celsius} degrees Celsius is {celsius * 9 / 5 + 32:.2f} degrees Fahrenheit"
-    )
+    print(f"{celsius} degrees Celsius is {celsius * 9 / 5 + 32:.2f} degrees Fahrenheit")
 
 elif user_input == "2":
     fahrenheit = float(input("Please enter degrees in F: "))
     converted_celsius = (fahrenheit - 32) * 5 / 9
-    print(
-        f"{fahrenheit} degrees Fahrenheit is {converted_celsius:.2f} degrees Celsius"
-    )
+    print(f"{fahrenheit} degrees Fahrenheit is {converted_celsius:.2f} degrees Celsius")

@@ -1,6 +1,6 @@
 # Pin kode med x antall forsøk
 
-secret_pin: str = "2468"  #Changed to string, as a pin of 0007 is different to 7
+secret_pin: str = "2468"  # Changed to string, as a pin of 0007 is different to 7
 attempts_left: int = 3
 is_authenticated: bool = False
 
