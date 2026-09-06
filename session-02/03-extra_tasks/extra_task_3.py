@@ -1,9 +1,9 @@
 # Fibonacci
 
 limit = int(input("Show the fibonacci numbers up to: "))
-last = 0
-prev_number = 1
-next_number = 0
+last: int = 0
+prev_number: int = 1
+next_number: int = 1
 
 if limit >= 0:
     print(last)
@@ -25,3 +25,12 @@ while next_number <= limit:
     last = prev_number
     prev_number = next_number
     next_number = last + prev_number
+
+# Simplest iteration (assisted, concepts not learnt yet)
+# limit = int(input("Show the fibonacci numbers up to: "))
+# current = 0
+# following = 1
+#
+# while current <= limit:
+#     print(current)
+#     current, following = following, current + following

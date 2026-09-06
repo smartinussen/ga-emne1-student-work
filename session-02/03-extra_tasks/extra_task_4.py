@@ -1,24 +1,26 @@
 # Prime numbers
-
-is_prime = True
+print("This program checks if input is a prime number")
 
 while True:
-    user_input = (input('Enter an integer (q to quit): '))
-
-    if user_input == 'q':
+    is_prime: bool = True
+    user_input: str = (input("Enter a positive integer (q to quit): "))
+    if user_input.lower() == "q":
+        print("Program has ended")
         break
+    elif not user_input.isdigit():
+        print("Invalid input. Try again")
+        continue
 
-    user_input = int(user_input)
+    intput = int(user_input)  # intput is NOT a typo, it's a pun
 
-    if user_input <= 1:
-        print(f'{user_input} is not a prime number')
-
-    elif user_input > 1:
-            for i in range(2, int(user_input ** 0.5) + 1):
-                if (user_input % i) == 0:
-                    is_prime = False
-                    break
-            if is_prime:
-                print(f'{user_input} is a prime number')
-            else:
-                print(f'{user_input} is not a prime number')
+    if intput <= 1:
+        is_prime = False
+    else:
+        for i in range(2, int(intput ** 0.5) + 1):
+            if (intput % i) == 0:
+                is_prime = False
+                break
+    if is_prime:
+        print(f"{intput} is a prime number")
+    else:
+        print(f"{intput} is not a prime number")

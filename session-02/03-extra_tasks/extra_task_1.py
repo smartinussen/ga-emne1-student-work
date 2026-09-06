@@ -1,6 +1,6 @@
 # Doble tall
 number = 1
 
-for i in range(1, 11):
+for _ in range(10):
     print(number)
     number *= 2
