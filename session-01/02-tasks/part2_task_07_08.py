@@ -15,6 +15,7 @@ if user_input == "1":
 
 elif user_input == "2":
     fahrenheit = float(input("Please enter degrees in F: "))
+    converted_celsius = (fahrenheit - 32) * 5 / 9
     print(
-        f"{fahrenheit} degrees Fahrenheit is {(fahrenheit - 32) * 5 / 9:.2f} degrees Celsius"
+        f"{fahrenheit} degrees Fahrenheit is {converted_celsius:.2f} degrees Celsius"
     )
