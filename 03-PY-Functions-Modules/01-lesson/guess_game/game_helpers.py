@@ -2,6 +2,7 @@ def read_guess():
     guess = input("Guess a number 1-30: ")
     return int(guess)
 
+
 def check_guess(guess, secret_number):
     if guess == secret_number:
         return "correct"
@@ -9,6 +10,7 @@ def check_guess(guess, secret_number):
         return "low"
     else:
         return "high"
+
 
 def show_feedback(result: str) -> None:
     if result == "correct":
