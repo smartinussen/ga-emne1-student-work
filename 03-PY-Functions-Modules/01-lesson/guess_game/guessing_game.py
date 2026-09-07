@@ -1,8 +1,7 @@
 # The great guessing game
 
 import random
-from game_helpers import *
-
+from game_helpers import read_guess, check_guess, show_feedback
 
 
 def main() -> None:
