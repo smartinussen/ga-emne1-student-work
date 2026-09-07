@@ -6,15 +6,15 @@ upper_limit: int = 30
 counter: int = 0
 
 while not correct_guessed and counter < 5:
-    middle_of_limits: int = ((lower_limit + upper_limit) // 2)
+    middle_of_limits: int = (lower_limit + upper_limit) // 2
     print(f"Jeg gjetter på {middle_of_limits}")
     print("Var det korrekt ?")
-    user_input: str = input('''
+    user_input: str = input("""
     Tast (k) for korrekt
     Tast (h) for høyere
     Tast (l) for lavere
     Tast (a) for å avslutte
-    Ditt svar: ''')
+    Ditt svar: """)
 
     if user_input.lower() == "a":
         print("Program avsluttes")
@@ -35,7 +35,6 @@ while not correct_guessed and counter < 5:
     elif counter == 5:
         print("Ingen flere forsøk")
         break
-
 
 
 # with n guesses you can distinguish at most
