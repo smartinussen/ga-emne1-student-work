@@ -1,29 +1,22 @@
 name: Ruff
-on: [push]
+on: [push, pull_request]
+
 jobs:
-  build:
+  lint:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read          # was: write — CI no longer needs to push
     steps:
-    - uses: actions/checkout@v4
-    - name: Install uv
-      uses: astral-sh/setup-uv@v3
-    - name: Install dependencies
-      run: uv sync
-    - name: Auto-fix lint issues with Ruff
-      run: uvx ruff check . --fix
-    - name: Auto-format code with Ruff
-      run: uvx ruff format .
-    - name: Verify Ruff checks
-      run: uvx ruff check .
-    - name: Commit auto-fixes
-      if: github.event_name == 'push'
-      run: |
-        if ! git diff --quiet; then
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          git commit -m "style: auto-fix Ruff issues"
-          git push
-        fi
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Install dependencies
+        run: uv sync
+
+      - name: Lint
+        run: uv run ruff check .
+
+      - name: Check formatting
+        run: uv run ruff format --check .
