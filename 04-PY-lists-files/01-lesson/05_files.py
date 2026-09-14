@@ -1,9 +1,9 @@
-from pathlib import Path as P
+from pathlib import Path
 
-print(f"Current dir is: {P.cwd()}")
+print(f"Current dir is: {Path.cwd()}")
 
 
-data_dir = P("../data") # alternativt p("..") / "data"
+data_dir = Path("../data") # alternativt p("..") / "data"
 prices = data_dir / "prices.txt"
 
 print(data_dir.exists())
