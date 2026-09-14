@@ -1,5 +1,3 @@
-import encodings
-
 from pathlib import Path as P
 
 print(f"Current dir is: {P.cwd()}")
