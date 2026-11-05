@@ -8,3 +8,4 @@ try:
         file.write("Practice report\n")
 except PermissionError:
     print("Du har ikke tilgang twil å skrive til filen")
+
