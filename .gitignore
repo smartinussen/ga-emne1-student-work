@@ -4,3 +4,8 @@
 __pycache__/
 *.pyc
 *.pyx
+.DS_Store
+
+11-pysql-flask/01-lesson-me/config-local.py
+# shareed template: do not ignore
+# config-local.py.example
